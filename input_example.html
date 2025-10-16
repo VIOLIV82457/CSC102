@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Example</title>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="code.js" ></script>
+
+</head>
+<body>
+    <header>
+        <h1>Input Example</h1>
+         <nav>
+            <a href="index.html">Index</a>
+            <br>
+            <a href="boards.html">Boards</a>
+            <br>
+            <a href = "dicegame.html">Craps game</a>
+            <br>
+            <a href = "input_example.html"> Input Example</a>
+            <br>
+            <br>
+        </nav>
+    </header>
+
+    <main>
+        <div id="divMessage"></div>
+        <form method="post" action="#" name="frmInput" id="frmInput" onsubmit="return false;">
+
+            <label for="txtFirstName">First Name:</label>
+            <input type="text" name="txtFirstName" id="txtFirstName" placeholder="ex: John">
+            
+            <br>
+
+            <label for="txtLastName">Last Name:</label>
+            <input type="text" name="txtLastName" id="txtLastName" placeholder="ex: Doe">
+           
+            <br>
+
+            <label for="txtZipCode">Zip Code:</label>
+            <input type="text" name="txtZipCode" id="txtZipCode">
+           
+            <br>
+
+            <button onclick="validateForm();">Save Inputs</button>
+        </form>
+
+
+
+    </main>
+</body>
+</html>
