@@ -1,3 +1,4 @@
+//This sets the name for the palindrome and what will appear on screen
 function testPalin(){
             let userInput = document.getElementById("txtInput").value.trim();
 
@@ -10,7 +11,7 @@ function testPalin(){
             }
         }
         
-
+//This function removes spaces and lowercases the inut to allow a proper palindrome check
         function isPalindrome(wordToTest){
             let cleanedWord = wordToTest.replace(/\s/g, "")
             
@@ -18,6 +19,7 @@ function testPalin(){
             
 
             let arrCleaned = cleanedWord.split("");
+//reverses word for palindrome
             arrCleaned = arrCleaned.reverse();
 
             let reversedWord = arrCleaned.join("");
